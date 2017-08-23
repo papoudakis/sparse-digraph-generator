@@ -1,0 +1,6 @@
+!defaultpackage!.ExecLexem;!defaultpackage!.AdvLexem
+!defaultpackage!.Interpreter;!defaultpackage!.Scanner
+!defaultpackage!.Scanner;!defaultpackage!.AdvLexem
+!defaultpackage!.Scanner;!defaultpackage!.Codes
+!defaultpackage!.Scanner;!defaultpackage!.ExecLexem
+!defaultpackage!.Scanner;!defaultpackage!.Lexem

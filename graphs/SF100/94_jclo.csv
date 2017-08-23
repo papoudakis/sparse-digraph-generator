@@ -1,0 +1,13 @@
+!defaultpackage!.Example;!defaultpackage!.ExampleArgs
+!defaultpackage!.Example;edu.mscd.cs.jclo.JCLO
+!defaultpackage!.Main;edu.mscd.cs.jclo.JCLO
+edu.mscd.cs.jclo.JCLO;!defaultpackage!.B[]
+edu.mscd.cs.jclo.JCLO;!defaultpackage!.C[]
+edu.mscd.cs.jclo.JCLO;!defaultpackage!.D[]
+edu.mscd.cs.jclo.JCLO;!defaultpackage!.F[]
+edu.mscd.cs.jclo.JCLO;!defaultpackage!.I[]
+edu.mscd.cs.jclo.JCLO;!defaultpackage!.J[]
+edu.mscd.cs.jclo.JCLO;!defaultpackage!.S[]
+edu.mscd.cs.jclo.JCLOTests;edu.mscd.cs.jclo.JCLO
+edu.mscd.cs.jclo.JCLOTests;edu.mscd.cs.jclo.JCLOArgs
+edu.mscd.cs.jclo.JCLOTests;edu.mscd.cs.jclo.JCLOnly

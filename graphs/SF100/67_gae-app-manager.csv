@@ -1,0 +1,16 @@
+net.sf.gaeappmanager.google.appengine.Main;net.sf.gaeappmanager.google.appengine.Manager
+net.sf.gaeappmanager.google.appengine.Main;net.sf.gaeappmanager.google.appengine.Quota
+net.sf.gaeappmanager.google.appengine.Main;net.sf.gaeappmanager.google.appengine.QuotaDetails
+net.sf.gaeappmanager.google.appengine.Main;net.sf.gaeappmanager.google.appengine.QuotaValue
+net.sf.gaeappmanager.google.appengine.Manager;net.sf.gaeappmanager.google.LogonHelper
+net.sf.gaeappmanager.google.appengine.Manager;net.sf.gaeappmanager.google.appengine.QuotaDetails
+net.sf.gaeappmanager.google.appengine.Manager;net.sf.gaeappmanager.google.appengine.QuotaDetailsParser
+net.sf.gaeappmanager.google.appengine.Quota;net.sf.gaeappmanager.google.appengine.QuotaGroup
+net.sf.gaeappmanager.google.appengine.Quota;net.sf.gaeappmanager.google.appengine.Quota[]
+net.sf.gaeappmanager.google.appengine.QuotaDetails;net.sf.gaeappmanager.google.appengine.Quota
+net.sf.gaeappmanager.google.appengine.QuotaDetails;net.sf.gaeappmanager.google.appengine.QuotaValue
+net.sf.gaeappmanager.google.appengine.QuotaDetailsParser;net.sf.gaeappmanager.google.appengine.Quota
+net.sf.gaeappmanager.google.appengine.QuotaDetailsParser;net.sf.gaeappmanager.google.appengine.QuotaDetails
+net.sf.gaeappmanager.google.appengine.QuotaDetailsParser;net.sf.gaeappmanager.google.appengine.QuotaValue
+net.sf.gaeappmanager.google.appengine.QuotaGroup;net.sf.gaeappmanager.google.appengine.QuotaGroup[]
+net.sf.gaeappmanager.google.appengine.QuotaValue;net.sf.gaeappmanager.google.appengine.Quota

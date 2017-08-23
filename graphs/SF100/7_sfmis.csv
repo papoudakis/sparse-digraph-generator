@@ -1,0 +1,13 @@
+com.hf.sfm.system.business.Login;com.hf.sfm.util.DaoFactory
+com.hf.sfm.system.business.Login;com.hf.sfm.util.HibernateSessionFactory
+com.hf.sfm.test.LoaderUnitTest;com.hf.sfm.util.HibernateSessionFactory
+com.hf.sfm.util.BasePara;com.hf.sfm.util.OddParamsOfArrayInLoader
+com.hf.sfm.util.DaoFactory;com.hf.sfm.crypt.Base64
+com.hf.sfm.util.DaoFactory;com.hf.sfm.util.HibernateSessionFactory
+com.hf.sfm.util.DaoFactoryUtil;com.hf.sfm.util.DaoFactory
+com.hf.sfm.util.DataSource;com.hf.sfm.util.BasePara
+com.hf.sfm.util.DataSource;com.hf.sfm.util.ListRange
+com.hf.sfm.util.DataSource;com.hf.sfm.util.Loader
+com.hf.sfm.util.Loader;com.hf.sfm.util.BasePara
+com.hf.sfm.util.Loader;com.hf.sfm.util.HibernateSessionFactory
+com.hf.sfm.util.Loader;com.hf.sfm.util.ListRange
