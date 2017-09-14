@@ -4,6 +4,8 @@ from scipy.stats import ks_2samp
 from utils import *
 import copy
 import os
+threshold = 1e-6
+
 # functions for computing the optimal parameters of SDG, GDGNC, Bollobas and ESDG
 
 
@@ -83,9 +85,9 @@ def optimize_gdgnc(graph, gdgncPath):
     best_gdgnc_msd = np.inf
     best_p = -1
     best_q = -1
-    while p <= 1:
+    while p <= 1 + threshold:
         q = 0.0
-        while q <= 1:
+        while q <= 1 + threshold:
             os.system('python ' + gdgncPath + 'graphgen.py 1' + ' nodes=' + str(num_nodes) + ' p=' + str(p) + ' q=' +
                       str(q) + '> /tmp/temp' + str(counter) + '.csv')
 
@@ -114,7 +116,7 @@ def optimize_gdgnc(graph, gdgncPath):
 
 
 def optimize_sedge(cur_graph, new_graph, num_of_new_edges, new_nodes):
-    threshold = 1e-6
+
     alpha = 0.1
 
     in_degree_or = sorted(new_graph.in_degree(new_nodes).values())
