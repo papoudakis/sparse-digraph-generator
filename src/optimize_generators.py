@@ -113,7 +113,7 @@ def optimize_gdgnc(graph, gdgncPath):
     return best_graph, best_p, best_q
 
 
-def optimize_esdg(cur_graph, new_graph, num_of_new_edges, new_nodes):
+def optimize_sedge(cur_graph, new_graph, num_of_new_edges, new_nodes):
     threshold = 1e-6
     alpha = 0.1
 
@@ -137,7 +137,7 @@ def optimize_esdg(cur_graph, new_graph, num_of_new_edges, new_nodes):
 
                         temp_graph = copy.deepcopy(cur_graph)
 
-                        gen_graph = esdg(temp_graph, num_of_new_edges, new_nodes, epsilon1, epsilon2, alpha, beta)
+                        gen_graph = sedge(temp_graph, num_of_new_edges, new_nodes, epsilon1, epsilon2, alpha, beta)
                         in_degree_gen = sorted(gen_graph.in_degree(new_nodes).values())
                         out_degree_gen = sorted(gen_graph.out_degree(new_nodes).values())
                         temp_MSD = max(np.mean(np.power(np.asarray(in_degree_or) - np.asarray(in_degree_gen), 2.0)),

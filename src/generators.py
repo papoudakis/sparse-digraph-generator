@@ -91,7 +91,7 @@ def bollobas(num_edges, alpha, beta, delta1=1.0, delta2=1.0):
     return gen_graph
 
 
-def esdg(gen_graph, num_of_new_edges, new_nodes, epsilon1, epsilon2, alpha, beta):
+def sedge(gen_graph, num_of_new_edges, new_nodes, epsilon1, epsilon2, alpha, beta):
     j = 0
     gen_graph.add_nodes_from(new_nodes)
 
