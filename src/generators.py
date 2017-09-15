@@ -45,6 +45,28 @@ def sdg(num_nodes, num_edges, epsilon1, epsilon2):
     return gen_graph
 
 
+def gdgnc(num_nodes, p, q):
+    gen_graph = nx.DiGraph()
+    counter = 1
+    gen_graph.add_node(0)
+    while counter < num_nodes:
+        gen_graph.add_node(counter)
+        if random.random() <= p:
+            rand_node = random.randint(0, counter - 1)
+            gen_graph.add_edge(counter, rand_node)
+            for edge in gen_graph.out_edges(rand_node):
+                gen_graph.add_edge(counter, edge[1])
+            if random.random() <= q:
+                rand_node = random.randint(0, counter - 1)
+                for edge in gen_graph.out_edges(rand_node):
+                    gen_graph.add_edge(counter, edge[1])
+        else:
+            rand_node = random.randint(0, counter - 1)
+            gen_graph.add_edge(rand_node, counter)
+        counter += 1
+    return gen_graph
+
+
 # Bollobas graph generator
 def bollobas(num_edges, alpha, beta, delta1=1.0, delta2=1.0):
     i = 0

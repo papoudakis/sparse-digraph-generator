@@ -73,7 +73,7 @@ def optimize_bollobas(graph):
     return best_graph, best_alpha, best_beta
 
 
-def optimize_gdgnc(graph, gdgncPath):
+def optimize_gdgnc(graph):
     in_degree_or = sorted(graph.in_degree().values())
     out_degree_or = sorted(graph.out_degree().values())
     num_nodes = len(graph.nodes())
@@ -88,10 +88,8 @@ def optimize_gdgnc(graph, gdgncPath):
     while p <= 1 + threshold:
         q = 0.0
         while q <= 1 + threshold:
-            os.system('python ' + gdgncPath + 'graphgen.py 1' + ' nodes=' + str(num_nodes) + ' p=' + str(p) + ' q=' +
-                      str(q) + '> /tmp/temp' + str(counter) + '.csv')
 
-            gdgnc_graph = loadGraphFromEdgeListTxt('/tmp/temp' + str(counter) + '.csv')
+            gdgnc_graph = gdgnc(num_nodes, p, q)
             in_degree_gen = sorted(gdgnc_graph.in_degree().values())
             out_degree_gen = sorted(gdgnc_graph.out_degree().values())
 
