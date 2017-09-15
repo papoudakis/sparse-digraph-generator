@@ -1,7 +1,0 @@
-de.devcity.parseargs.ArgsParser;de.devcity.parseargs.arguments.ParameterArgument
-de.devcity.parseargs.ArgsParser;de.devcity.parseargs.arguments.StringArgument
-de.devcity.parseargs.ArgsParser;de.devcity.parseargs.arguments.SwitchArgument
-de.devcity.parseargs.arguments.KeyArgument;de.devcity.parseargs.arguments.Argument
-de.devcity.parseargs.arguments.ParameterArgument;de.devcity.parseargs.arguments.KeyArgument
-de.devcity.parseargs.arguments.StringArgument;de.devcity.parseargs.arguments.Argument
-de.devcity.parseargs.arguments.SwitchArgument;de.devcity.parseargs.arguments.KeyArgument

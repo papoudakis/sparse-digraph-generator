@@ -1,7 +1,0 @@
-jipa.Label;jipa.Main
-jipa.Main;jipa.Label
-jipa.Main;jipa.Main$1
-jipa.Main;jipa.Main$opcodes
-jipa.Main;jipa.Variable
-jipa.Main$1;jipa.Main$opcodes
-jipa.Main$opcodes;jipa.Main$opcodes[]
