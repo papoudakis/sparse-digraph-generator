@@ -78,7 +78,9 @@ for folder in ['SDG', 'GDGNC', 'Bollobas']:
             MSD_out.append(np.mean(np.array(MSD_out_list)))
         softwares.append(g.split('.')[0])
 for i in range(10):
-    print softwares[i] + ' & ' + str(round(KS_in[i], 2)) + ' & ' + str(round(KS_in[10 + i], 2)) + ' & ' + str(round(KS_in[20 + i], 2)) + ' & ' + \
-          str(round(KS_out[i], 2)) + ' & ' + str(round(KS_out[10 + i], 2)) + ' & ' + str(round(KS_out[20 + i], 2)) + ' & ' + str(round(MSD_in[i], 2)) + \
-          ' & ' + str(round(MSD_in[10 + i], 2)) + ' & ' + str(round(MSD_out[i], 2)) + ' & ' + str(round(MSD_out[10 + i], 2)) + '\\\ '
+    print softwares[i] + ' & ' + str(round(KS_in[i], 2)) + ' & ' + str(round(KS_in[10 + i], 2)) + ' & ' + \
+          str(round(KS_in[20 + i], 2)) + ' & ' +  str(round(KS_out[i], 2)) + ' & ' + str(round(KS_out[10 + i], 2)) + \
+          ' & ' + str(round(KS_out[20 + i], 2)) + ' & ' + str(round(MSD_in[i], 2)) + ' & ' + \
+          str(round(MSD_in[10 + i], 2)) + ' & ' + str(round(MSD_out[i], 2)) + ' & ' + str(round(MSD_out[10 + i], 2)) \
+          + '\\\ '
 
