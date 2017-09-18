@@ -1,6 +1,6 @@
-Source code for various graph generators.
+Source code for reproduning the tables and the figures of the paper.
 
-## Script
+## Scripts
 ```
 generators.py
 ```
