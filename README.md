@@ -10,6 +10,6 @@ There are 4 available folder:
 
 * **generated_graphs**, which contains the 100 generated graphs for each one of the original graph for the 3 models that we tested, SDG, GDGNC, Bollobas
 
-* **evolved_graps**, which contains the 10 pairs of consecutive software graphs. We used this data for the experiments of SEDGE.
+* **evolved_graphs**, which contains the 10 pairs of consecutive software graphs. We used this data for the experiments of SEDGE.
 
 Authors: Georgios Papoudakis, Philippe Preux, Martin Monperrus
