@@ -1,10 +1,10 @@
-Source code for reproduning the tables and the figures of the paper.
+Source code for reproducing the tables and the figures of the paper.
 
 ## Scripts
 ```
 generators.py
 ```
-This script contains functions for generating graphs. The model that SDG, GDGNC, Bollobas and SEDGE.
+This script contains functions for generating graphs. These generators are SDG, GDGNC, Bollobas and SEDGE.
 
 ```
 optimize_generators.py
