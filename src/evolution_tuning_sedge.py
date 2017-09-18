@@ -74,9 +74,8 @@ for folder in sorted(os.listdir(graphPath)):
     num_of_new_edges = len(new_edges)
 
     temp_graph = copy.deepcopy(gen_graph)
-     # find the optimal parameters
-    best_graph, alpha, beta, epsilon1, epsilon2 = optimize_sedge(gen_graph, graph2, num_of_new_edges,
-                                                                                   new_nodes)
+    # find the optimal parameters
+    best_graph, alpha, beta, epsilon1, epsilon2 = optimize_sedge(gen_graph, graph2, num_of_new_edges, new_nodes)
     if len(best_graph.nodes()) != len(graph2.nodes()):
         print 'Error'
         continue
