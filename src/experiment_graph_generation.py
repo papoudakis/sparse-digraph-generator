@@ -124,7 +124,7 @@ for f in sorted(os.listdir(graphPath)):
         MSD_in_list.append(np.mean(np.power(np.asarray(in_degree_or) - np.asarray(in_degree_gen), 2.0)))
         MSD_out_list.append(np.mean(np.mean(np.power(np.asarray(out_degree_or) - np.asarray(out_degree_gen), 2.0))))
 
-        f_result = open(resultPath + 'Generative/' + f.split('.')[0] + '/' + f.split('.')[0] + str(i) + '.csv', 'w')
+        f_result = open(resultPath + 'SDG/' + f.split('.')[0] + '/' + f.split('.')[0] + str(i) + '.csv', 'w')
         for e in gen_graph.edges():
             f_result.write(str(e[0]) + ';' + str(e[1]) + '\n')
         f_result.close()
@@ -145,7 +145,8 @@ for f in sorted(os.listdir(graphPath)):
 
         KS_in_list_bollobas.append(ks_2samp(cdf_in_emp, cdf_in_bollobas))
         KS_out_list_bollobas.append(ks_2samp(cdf_out_emp, cdf_out_bollobas))
-
+        
+        f_result = open(resultPath + 'Bollobas/' + f.split('.')[0] + '/' + f.split('.')[0] + str(i) + '.csv', 'w')
         for e in bollobas_graph.edges():
             f_result.write(str(e[0]) + ';' + str(e[1]) + '\n')
         f_result.close()
